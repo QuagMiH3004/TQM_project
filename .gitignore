@@ -1,0 +1,12 @@
+# Mẫu .NET/C# chuẩn
+[Bb]in/
+[Oo]bj/
+
+# Cấu hình IDE (Rider/VSCode)
+.vs/
+.vscode/
+*.user
+
+# Cấu hình JetBrains Rider
+.idea/
+.DS_Store
