@@ -3,18 +3,24 @@
         xmlns:vm="using:TQM_project.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        mc:Ignorable="d" d:DesignWidth="1000" d:DesignHeight="500"
         x:Class="TQM_project.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
         Icon="/Assets/avalonia-logo.ico"
-        Title="TQM_project">
+        Title="TQM_App">
 
     <Design.DataContext>
         <!-- This only sets the DataContext for the previewer in an IDE,
              to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
         <vm:MainWindowViewModel/>
     </Design.DataContext>
-
-    <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-
+    
+    <StackPanel Orientation="Vertical" Spacing="5" Margin="16">
+        <TextBlock FontSize="10" Text="Email"></TextBlock>
+        <TextBox FontSize="18" Watermark="Ex: opensource@openmail.com" HorizontalAlignment="Left" Width="300" ></TextBox>
+        <TextBlock FontSize="10" Text="Password"></TextBlock>
+        <TextBox FontSize="16" Watermark="xxxxxxx...." HorizontalAlignment="Left" Width="250"></TextBox>
+        
+    </StackPanel>
+    
 </Window>
