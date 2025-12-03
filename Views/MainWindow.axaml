@@ -3,7 +3,7 @@
         xmlns:vm="using:TQM_project.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="1000" d:DesignHeight="500"
+        mc:Ignorable="d" d:DesignWidth="1200" d:DesignHeight="700"
         x:Class="TQM_project.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
         Icon="/Assets/avalonia-logo.ico"
@@ -15,11 +15,29 @@
         <vm:MainWindowViewModel/>
     </Design.DataContext>
     
-    <StackPanel Orientation="Vertical" Spacing="5" Margin="16">
-        <TextBlock FontSize="10" Text="Email"></TextBlock>
-        <TextBox FontSize="18" Watermark="Ex: opensource@openmail.com" HorizontalAlignment="Left" Width="300" ></TextBox>
-        <TextBlock FontSize="10" Text="Password"></TextBlock>
-        <TextBox FontSize="16" Watermark="xxxxxxx...." HorizontalAlignment="Left" Width="250"></TextBox>
+    <StackPanel Orientation="Vertical" Spacing="5" Margin="5">
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Spacing="5" Margin="3">
+           <TextBlock Text="Dashboard" FontSize="30" HorizontalAlignment="Center" FontWeight="Bold"/>
+           <TextBlock Text="Name: Trịnh Quang Minh" FontSize="14" HorizontalAlignment="Center" FontStyle="Italic"/> 
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Spacing="5" Margin="3">
+            <Button Content="Home"/>
+            <Button Content="Profile"/>
+            <Button Content="Setting"/>
+            <Button Content="Logout"/>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Left" Spacing="5" Margin="3" >
+            <StackPanel Orientation="Vertical" Margin="6" Spacing="5" >
+                        <TextBlock Text="Profile infor" FontSize="18" FontWeight="Black" HorizontalAlignment="Center" />
+                        <TextBlock Text="Name: Trịnh Quang Minh"/>
+                        <TextBlock Text="Gmail: skodat299@gmail.com"/>
+                        <TextBlock Text="Outlook: skodat299@outlook.com"/>
+                        <TextBlock Text="Member since: 29"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" Margin="6" Spacing="5" >
+                        <TextBlock Text="a"/>
+                    </StackPanel>
+        </StackPanel>
         
     </StackPanel>
     
