@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TQM_project")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1ef0d127a8a95ef0ad8a38ef587c1872d99d1ba7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3939553a65327207dd451f0a35ef3baa88ce5bf4")]
 [assembly: System.Reflection.AssemblyProductAttribute("TQM_project")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TQM_project")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
