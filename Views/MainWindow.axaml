@@ -15,42 +15,12 @@
         <vm:MainWindowViewModel/>
     </Design.DataContext>
     
-    <StackPanel Orientation="Vertical" Spacing="5" Margin="5">
-        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Spacing="5" Margin="3">
-           <TextBlock Text="Dashboard" FontSize="30" HorizontalAlignment="Center" FontWeight="Bold"/>
-           <TextBlock Text="Name: Trịnh Quang Minh" FontSize="14" HorizontalAlignment="Center" FontStyle="Italic"/> 
-        </StackPanel>
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Spacing="5" Margin="3">
-            <Button Content="Home"/>
-            <Button Content="Profile"/>
-            <Button Content="Setting"/>
-            <Button Content="Logout"/>
-        </StackPanel>
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" Spacing="5" Margin="3" > 
-            <StackPanel Orientation="Vertical" Margin="6" Spacing="5" >
-                <TextBlock Text="Profile infor" FontSize="18" FontWeight="Black" HorizontalAlignment="Center" />
-                <TextBlock Text="Name: Trịnh Quang Minh"/>
-                <TextBlock Text="Gmail: skodat299@gmail.com"/>
-                <TextBlock Text="Outlook: skodat299@outlook.com"/>
-                <TextBlock Text="Member since: 29"/>
-            </StackPanel>
-            <ScrollViewer VerticalScrollBarVisibility="Auto">
-               <StackPanel Orientation="Vertical" Margin="6" Spacing="5"  >
-                   <TextBlock Text="Recent activities" FontSize="18" FontWeight="Black" HorizontalAlignment="Center"/>
-                   <TextBlock Text="- Logged in"/>
-                   <TextBlock Text="- Updated profile"/>
-                   <TextBlock Text="- Posted comment "/>
-                   
-               </StackPanel> 
-            </ScrollViewer>
-            <StackPanel Orientation="Vertical" Margin="6" Spacing="5" >
-                <TextBlock Text="Quick Action" FontSize="18" FontWeight="Black" HorizontalAlignment="Center"/>
-                <Button Content="New Post" HorizontalAlignment="Center" Width="120"/>
-                <Button Content="Upload Photos" HorizontalAlignment="Center"  Width="120"/>
-                <Button Content="Send Message" HorizontalAlignment="Center" Width="120"/>
-            </StackPanel>
-        </StackPanel>
-        <TextBlock Text="© 2025 Trinh Quang Minh. All rights reserved." HorizontalAlignment="Center" FontStyle="Italic"/>
-    </StackPanel>
+    <Grid ColumnDefinitions="3*, 6*, 1*" Margin="5">
+        <Grid Margin="3" RowSpacing="3" RowDefinitions="Auto, Auto, Auto">
+            <TextBlock Text="My Dashboard" FontWeight="Bold" FontSize="20"></TextBlock>
+            <TextBlock Grid.Row="1" Text="Author: TQM"></TextBlock>
+            <TextBlock Grid.Row="2" Text="Powered by Avalonia, Rider"></TextBlock>
+        </Grid>
+    </Grid>
     
 </Window>
