@@ -24,7 +24,7 @@ To build and run this application, you must have the **.NET SDK** installed.
 * **SDK:** **.NET 9 (RECOMMENDED)**
 * **Operating System:** Tested successfully on **Ubuntu LTS 24.04**. Expected to run on any system supporting .NET and Avalonia.
 
-> **Development Environment Note:** This project was developed and tested on a legacy system: a **Lenovo ThinkPad X230 (i5-3320M, 16GB RAM, 180GB SSD) running Ubuntu LTS 24.04**.
+> **Development Environment Note:** This project was developed and tested on a legacy system: a **Lenovo ThinkPad X230 (i5-3320M) running Ubuntu LTS 24.04**.
 
 ## Getting Started
 
