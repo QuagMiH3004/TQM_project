@@ -15,37 +15,23 @@
         <vm:MainWindowViewModel/>
     </Design.DataContext>
     
-    <Grid RowDefinitions="Auto, Auto, Auto" Margin="5">
-        <Grid Margin="3" RowSpacing="1" RowDefinitions="Auto, Auto, Auto" HorizontalAlignment="Center">
-            <TextBlock Text="My Dashboard" FontWeight="Bold" FontSize="30" HorizontalAlignment="Center"></TextBlock>
-            <TextBlock Grid.Row="1" Text="Author: TQM" HorizontalAlignment="Center"></TextBlock>
-            <TextBlock Grid.Row="2" Text="Powered by Avalonia, Rider" HorizontalAlignment="Center"></TextBlock>
-        </Grid>
-        <Grid Grid.Row="1" ColumnDefinitions="Auto, Auto, Auto, Auto, Auto" ColumnSpacing="4"  >
-            <Button  VerticalAlignment="Center" Width="80" >
-                <TextBlock Text="Home" HorizontalAlignment="Center" FontSize="15"></TextBlock>
-            </Button>
-            <Button Grid.Column="1"  Width="80">
-                <TextBlock Text="Profile" HorizontalAlignment="Center" FontSize="15"></TextBlock>
-            </Button>
-            <Button Grid.Column="2"  Width="80">
-                <TextBlock Text="Setting" HorizontalAlignment="Center" FontSize="15"></TextBlock>
-            </Button>
-            <Button Grid.Column="3"  Width="80">
-                <TextBlock Text="Log out" HorizontalAlignment="Center" FontSize="15"></TextBlock>
-            </Button>
-            <Button Grid.Column="4" Width="80" >
-                <TextBlock Text="Plug-in" HorizontalAlignment="Center" FontSize="15"></TextBlock>
-            </Button>
-        </Grid>
-        <Grid Grid.Row="2" Margin="3" HorizontalAlignment="Stretch" RowSpacing="3" RowDefinitions="Auto, Auto, Auto">
-            <Grid RowDefinitions="Auto, Auto, Auto, Auto">
-                <TextBlock Text="Profile Inform" FontWeight="Bold" FontSize="20"></TextBlock>
-                <TextBlock Grid.Row="1" Text="Name: Trinh Quang Minh"></TextBlock>
-                <TextBlock Grid.Row="2" Text="Email: skodat299@oulook.com"></TextBlock>
-                <TextBlock Grid.Row="3" Text="Member since: 29" ></TextBlock>
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <Grid RowDefinitions="Auto, Auto, Auto" ColumnSpacing="5" Margin="6">
+                <Grid RowDefinitions="Auto, Auto">
+                    <TextBlock x:Name="InputBox" Text="Input" Margin="6,2" FontSize="16">
+                    </TextBlock>
+                    <TextBox Grid.Row="1"  VerticalAlignment="Top" Margin="5" Height="250" AcceptsReturn="True"></TextBox>
+                    
+                </Grid>
+                <Button Grid.Row="1" Width="150" Margin="6" Click="RunEngine" >
+                    <TextBlock Text="Execute" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18"/>
+                    
+                </Button>
+                <Grid Grid.Row="2" RowDefinitions="Auto, Auto">
+                    <TextBlock x:Name="OutputBox" Text="Output" Margin="6,2" FontSize="16"></TextBlock>
+                    <TextBox Grid.Row="1" Margin="6" Height="300" IsReadOnly="True" AcceptsReturn="True">
+                    </TextBox>
+                </Grid>
             </Grid>
-        </Grid>
-    </Grid>
-    
+    </ScrollViewer>
 </Window>
